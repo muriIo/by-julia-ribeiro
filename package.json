@@ -13,6 +13,8 @@
     "vite": "^7.0.4"
   },
   "dependencies": {
-    "lottie-web": "5.13.0"
+    "@tailwindcss/vite": "4.1.11",
+    "lottie-web": "5.13.0",
+    "tailwindcss": "4.1.11"
   }
 }

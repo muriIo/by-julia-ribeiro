@@ -6,10 +6,141 @@
   <link rel="icon" type="image/svg+xml" href="/logo.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>By Julia Ribeiro</title>
+  <link href="/src/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <div id="app"></div>
+<body class="font-poppins bg-background max-w-[100rem] !m-auto">
+  <nav class="flex h-20">
+    <figure class="flex-1 h-[100%] max-w-[10rem]">
+      <img src="./src/assets/logo.png" alt="Logo da marca By Julia Ribeiro">
+    </figure>
+    <ul class="flex gap-10 items-center">
+      <li><a href="#">Portfólio</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main class="!mt-10">
+    <div class="flex flex-col-reverse items-center gap-5">
+      <section class="flex flex-col flex-1 gap-3 items-center">
+        <h1 class="text-primary font-extrabold text-center">Onde suas unhas ganham vida e cor</h1>
+        <div class="relative h-[10rem] w-[100%] text-accent">
+          <ul class="hidden md:flex items-center justify-center gap-2 mt-4 font-medium">
+            <li class="flex items-center gap-2">💅 Alongamentos</li>
+            <li class="text-accent">|</li>
+            <li class="flex items-center gap-2">🎨 Esmaltações</li>
+            <li class="text-accent">|</li>
+            <li class="flex items-center gap-2">✨ Banho em gel</li>
+          </ul>
+          <div class="absolute md:hidden top-7 opacity-0 animate-slide-in-right [animation-delay:200ms]">Alongamentos
+          </div>
+          <div class="absolute md:hidden top-17 right-0 opacity-0 animate-slide-in-left [animation-delay:500ms]">
+            Esmaltações</div>
+          <div class="absolute md:hidden top-27 opacity-0 animate-slide-in-right [animation-delay:800ms]">Banho em gel
+          </div>
+        </div>
+        <button class="w-[16rem]">
+          <figure id="hero--cta--icon"></figure>
+          <span class="text-white">Agende seu horário</span>
+        </button>
+      </section>
+      <figure class="rounded-[50%] h-[100%] w-50">
+        <img src="./src/assets/julia-ribeiro.jpg" alt="Foto de perfil da Julia Ribeiro, Nail Designer">
+      </figure>
+    </div>
+    <div #portfolio class="!mt-10">
+      <h1 class="text-center">Portfólio</h1>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 auto-rows-[10px] !mt-3">
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+          <img class="!object-cover" src="./src/assets/portfolio/unhas-1.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-16 lg:row-span-8">
+          <img class="!object-cover" src="./src/assets/portfolio/pes-1.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-8 lg:col-span-2">
+          <img class="!object-cover" src="./src/assets/portfolio/unhas-2.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-16 lg:col-span-2 lg:row-span-8">
+          <img class="!object-cover" src="./src/assets/portfolio/unhas-3.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+          <img class="!object-cover" src="./src/assets/portfolio/unhas-4.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+          <img class="!object-cover" src="./src/assets/portfolio/unhas-5.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+          <img class="!object-cover" src="./src/assets/portfolio/unhas-6.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-16 lg:row-span-8">
+          <img class="!object-cover" src="./src/assets/portfolio/unhas-7.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+        <figure class="overflow-hidden rounded-lg shadow-md row-span-8 lg:col-span-2">
+          <img class="!object-cover" src="./src/assets/portfolio/pes-2.jpg"
+            alt="Foto de esmaltação em gel rosa com francesinha" />
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <footer class="!mt-10 !mb-10">
+    <div class="px-4 flex flex-col gap-4">
+
+      <!-- Título -->
+      <div class="flex items-center justify-center">
+        <button class="w-[16rem]">
+          <figure id="footer--cta--icon"></figure>
+          <span class="text-white">Agende seu horário</span>
+        </button>
+      </div>
+
+      <!-- Localização -->
+      <a href="https://maps.google.com/?q=Rua+Dr+Americo+Figueiredo,+2951+-+Julio+de+Mesquita,Sorocaba,+Brazil+18053-000"
+        target="_blank" rel="noopener noreferrer"
+        class="flex items-center flex-wrap gap-2 hover:scale-105 transition-transform justify-center">
+        <span class="text-center">📍 Rua Dr Americo Figueiredo, 2951 - Julio de Mesquita, Sorocaba,
+          18053-000</span>
+      </a>
+
+      <!-- Links de contato -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5515988334964" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-2 hover:scale-105 transition-transform h-[3rem]">
+          <figure class="flex-1 h-[100%]">
+            <img src="./src/assets/icon-whatsapp.svg" alt="WhatsApp">
+          </figure>
+          <span>(15) 98833-4964</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/byjulia.ribeiro" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-2 hover:scale-105 transition-transform h-[3rem]">
+          <figure class="flex-1 h-[100%]">
+            <img src="./src/assets/icon-instagram.svg" alt="Instagram">
+          </figure>
+          <span>@byjulia.ribeiro</span>
+        </a>
+
+      </div>
+
+      <!-- Créditos -->
+      <p class="text-center text-sm opacity-70">
+        © 2025 By Julia Ribeiro - Todos os direitos reservados
+      </p>
+
+    </div>
+  </footer>
+
   <script type="module" src="/src/main.ts"></script>
 </body>
 
