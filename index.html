@@ -16,6 +16,7 @@
     </figure>
     <ul class="flex gap-10 items-center">
       <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#pricing">Preços</a></li>
       <li><a href="#contact">Contato</a></li>
     </ul>
   </nav>
@@ -24,19 +25,19 @@
     <div class="flex flex-col-reverse items-center gap-5">
       <section class="flex flex-col flex-1 gap-3 items-center">
         <h1 class="text-primary font-extrabold text-center">Onde suas unhas ganham vida e cor</h1>
-        <div class="relative h-[10rem] w-[100%] text-accent">
-          <ul class="hidden md:flex items-center justify-center gap-2 mt-4 font-medium">
+        <div class="relative h-[10rem] md:h-[5rem] w-[100%] text-accent">
+          <ul class="hidden md:flex items-center justify-center gap-2 mt-4 font-medium motion-safe:animate-bounce">
             <li class="flex items-center gap-2">💅 Alongamentos</li>
             <li class="text-accent">|</li>
             <li class="flex items-center gap-2">🎨 Esmaltações</li>
             <li class="text-accent">|</li>
             <li class="flex items-center gap-2">✨ Banho em gel</li>
           </ul>
-          <div class="absolute md:hidden top-7 opacity-0 animate-slide-in-right [animation-delay:200ms]">💅 Alongamentos
+          <div class="absolute md:hidden top-7 opacity-0 motion-safe:animate-slide-in-right [animation-delay:200ms]">💅 Alongamentos
           </div>
-          <div class="absolute md:hidden top-17 right-0 opacity-0 animate-slide-in-left [animation-delay:500ms]">
+          <div class="absolute md:hidden top-17 right-0 opacity-0 motion-safe:animate-slide-in-left [animation-delay:500ms]">
             🎨 Esmaltações</div>
-          <div class="absolute md:hidden top-27 opacity-0 animate-slide-in-right [animation-delay:800ms]">✨ Banho em gel
+          <div class="absolute md:hidden top-27 opacity-0 motion-safe:animate-slide-in-right [animation-delay:800ms]">✨ Banho em gel
           </div>
         </div>
         <button class="w-[16rem] cursor-pointer btnGetInTouch">
@@ -44,54 +45,91 @@
           <span class="text-white">Agende seu horário</span>
         </button>
       </section>
-      <figure class="rounded-[50%] h-[100%] w-50">
+      <figure class="rounded-[50%] h-100% w-50">
         <img src="./src/assets/julia-ribeiro.jpg" alt="Foto de perfil da Julia Ribeiro, Nail Designer">
       </figure>
     </div>
-    <div id="portfolio" class="!mt-10">
+    <div id="portfolio" class="!mt-20">
       <h1 class="text-center">Portfólio</h1>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4 auto-rows-[10px] !mt-3">
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+        <figure class="rounded-lg shadow-md row-span-8">
           <img class="!object-cover" src="./src/assets/portfolio/unhas-1.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-16 lg:row-span-8">
+        <figure class="rounded-lg shadow-md row-span-16 lg:row-span-8">
           <img class="!object-cover" src="./src/assets/portfolio/pes-1.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-8 lg:col-span-2">
+        <figure class="rounded-lg shadow-md row-span-8 lg:col-span-2">
           <img class="!object-cover" src="./src/assets/portfolio/unhas-2.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-16 lg:col-span-2 lg:row-span-8">
+        <figure class="rounded-lg shadow-md row-span-16 lg:col-span-2 lg:row-span-8">
           <img class="!object-cover" src="./src/assets/portfolio/unhas-3.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+        <figure class="rounded-lg shadow-md row-span-8">
           <img class="!object-cover" src="./src/assets/portfolio/unhas-4.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+        <figure class="rounded-lg shadow-md row-span-8">
           <img class="!object-cover" src="./src/assets/portfolio/unhas-5.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-8">
+        <figure class="rounded-lg shadow-md row-span-8">
           <img class="!object-cover" src="./src/assets/portfolio/unhas-6.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-16 lg:row-span-8">
+        <figure class="rounded-lg shadow-md row-span-16 lg:row-span-8">
           <img class="!object-cover" src="./src/assets/portfolio/unhas-7.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
-        <figure class="overflow-hidden rounded-lg shadow-md row-span-8 lg:col-span-2">
+        <figure class="rounded-lg shadow-md row-span-8 lg:col-span-2">
           <img class="!object-cover" src="./src/assets/portfolio/pes-2.jpg"
             alt="Foto de esmaltação em gel rosa com francesinha" />
         </figure>
       </div>
     </div>
+    <div id="pricing" class="!mt-20 !py-8 flex flex-col items-center justify-center gap-14">
+      <div
+        class="flex flex-col items-center justify-center !pl-24  !pr-5 relative bg-accent rounded-[300px] w-[300px] max-w-300px h-[80px] on-scroll-animate md:opacity-0">
+        <div
+          class="absolute -top-[20px] -left-[30px] overflow-hidden rounded-[50%] !border !border-solid !border-amber-100 h-[120px]">
+          <figure class="shadow-md h-full w-full">
+            <img class="!object-cover" src="./src/assets/portfolio/alongamento.jpg"
+              alt="Foto de alongamento em gel vermelho" />
+          </figure>
+        </div>
+        <p class="text-amber-50">Alongamento em Gel</p>
+        <p class="text-amber-100"><b>R$ 120,00</b></p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center !pl-24  !pr-5 relative bg-accent rounded-[300px] w-[300px] max-w-300px h-[80px] on-scroll-animate md:opacity-0 ">
+        <div
+          class="absolute -top-[20px] -left-[30px] overflow-hidden rounded-[50%] !border !border-solid !border-amber-100 h-[120px]">
+          <figure class="shadow-md h-full w-full">
+            <img class="!object-cover" src="./src/assets/portfolio/banho.jpg" alt="Foto de banho em gel brilhante" />
+          </figure>
+        </div>
+        <p class="text-amber-50">Banho em Gel</p>
+        <p class="text-amber-100"><b>R$ 90,00</b></p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center !pl-24  !pr-5 relative bg-accent rounded-[300px] w-[300px] max-w-300px h-[80px] on-scroll-animate md:opacity-0 ">
+        <div
+          class="absolute -top-[20px] -left-[30px] overflow-hidden rounded-[50%] !border !border-solid !border-amber-100 h-[120px]">
+          <figure class="shadow-md h-full w-full">
+            <img class="!object-cover" src="./src/assets/portfolio/esmaltacao.jpg"
+              alt="Foto de esmaltação em gel transparente" />
+          </figure>
+        </div>
+        <p class="text-amber-50 text-center text-[14px]/[14px] line">Emaltação em Gel com Blindagem</p>
+        <p class="text-amber-100"><b>R$ 65,00</b></p>
+      </div>
+    </div>
   </main>
 
-  <footer class="!mt-10 !mb-10" id="contact">
+  <footer class="!mt-20 !mb-10" id="contact">
     <div class="px-4 flex flex-col gap-4">
 
       <!-- Título -->

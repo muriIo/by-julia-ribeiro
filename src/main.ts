@@ -31,3 +31,24 @@ function getInTouch() {
 
     window.open(whatsappURL, '_blank', 'noopener,noreferrer');
 }
+
+const elements = document.querySelectorAll(".on-scroll-animate");
+let nextElementToAnimate = 'right';
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            if (nextElementToAnimate == 'right') {
+                entry.target.classList.add("motion-safe:animate-slide-in-right", "[animation-delay:200ms]");
+                nextElementToAnimate = 'left';
+            } else if (nextElementToAnimate == 'left') {
+                entry.target.classList.add("motion-safe:animate-slide-in-left", "[animation-delay:200ms]");
+                nextElementToAnimate = 'right';
+            }
+
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 }); // Trigger when 20% of the element is visible
+
+elements.forEach((el) => observer.observe(el));
